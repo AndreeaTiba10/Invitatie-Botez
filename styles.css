@@ -19,7 +19,7 @@ body {
 }
 
 .invitation {
-  background: #ffffff70;
+  background: #ffffffb1;
   padding: 3rem;
   border-radius: 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -29,8 +29,8 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  width: 75%;
-  margin: 40px;
+  width: 55%;
+  margin: 40px auto;
 }
 
 h1 {
@@ -59,9 +59,15 @@ p {
   line-height: 1.3;
   font-weight: 600;
 }
+.location-link {
+  color: #333;
+  font-weight: 900;
+}
 .date p {
   font-size: 35px;
+  color: #812b4f;
 }
+
 button {
   padding: 10px 20px;
   font-size: 16px;
@@ -76,13 +82,30 @@ button {
   border: none;
   border-radius: 20px;
 }
-/* @media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .invitation {
-    width: 55%;
+    width: 75%;
   }
 }
-@media screen and (min-width: 1201px) {
+@media screen and (max-width: 767px) {
   .invitation {
-    max-width: 40%;
+    width: 85%;
+    padding: 8px;
   }
-} */
+  p,
+  .date p,
+  .parents-container {
+    font-size: 1.2rem;
+  }
+  .parents-container {
+    gap: 5px;
+    margin: 0;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  iframe {
+    width: 100%;
+  }
+}
