@@ -44,17 +44,10 @@ h1 {
 p {
   margin: 18px;
   font-size: 1.9rem;
+  color: #333;
+  line-height: 1.3;
+}
 
-  color: #333;
-  line-height: 1.3;
-}
-.parents-container {
-  font-size: 1.8rem;
-  margin: 30px auto;
-  color: #333;
-  line-height: 1.3;
-  flex-direction: column;
-}
 .location-link {
   color: #333;
 }
@@ -73,9 +66,13 @@ button {
   cursor: pointer;
   width: 200px;
 }
-.form-container {
-  border: none;
-  border-radius: 20px;
+dialog.form-container {
+  width: 60%;
+  height: auto;
+}
+dialog.form-container iframe {
+  width: 100%;
+  height: 100vh;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .invitation {
@@ -100,10 +97,10 @@ button {
   h1 {
     font-size: 40px;
   }
-  iframe {
+  dialog.form-container {
+    width: 90%;
+  }
+  dialog.form-container iframe {
     width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    border: none;
   }
 }
