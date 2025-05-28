@@ -20,8 +20,7 @@ body {
 }
 
 .invitation {
-  background: #ffffffb1;
-  padding: 3rem;
+  /* padding: 3rem; */
   border-radius: 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -30,12 +29,23 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 60%;
+  margin: 60px auto;
 }
-
+.rama {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+.text-container {
+  position: absolute;
+  width: 60%;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
 h1 {
   margin: 0;
-  font-size: 60px;
+  font-size: 50px;
   color: #b04c75;
 }
 .underline {
@@ -43,16 +53,16 @@ h1 {
 }
 p {
   margin: 18px;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   color: #333;
-  line-height: 1.3;
+  line-height: 1.1;
 }
 
 .location-link {
   color: #333;
 }
 .date p {
-  font-size: 35px;
+  font-size: 45px;
   color: #812b4f;
 }
 
@@ -81,21 +91,24 @@ dialog.form-container iframe {
 }
 @media screen and (max-width: 767px) {
   .invitation {
-    width: 85%;
-    padding: 8px;
+    width: 95%;
+    padding: 0;
   }
   p,
-  .date p,
-  .parents-container {
-    font-size: 1.2rem;
+  .date p {
+    font-size: 0.8rem;
+    margin: 5px;
   }
-  .parents-container {
-    gap: 5px;
-
-    flex-direction: column;
+  .text-container {
+    margin-top: 40px;
+    width: 200px;
+  }
+  button {
+    width: 80px;
+    font-size: 0.8rem;
   }
   h1 {
-    font-size: 40px;
+    font-size: 15px;
   }
   dialog.form-container {
     width: 90%;
