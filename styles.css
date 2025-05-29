@@ -86,7 +86,6 @@ dialog.form-container iframe {
     background-color: #faf1f5;
   }
   .invitation {
-    padding: 0;
     background-image: url(./img/fundal-m.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,12 +106,14 @@ dialog.form-container iframe {
     font-size: 1.2rem;
   }
   .text-container {
-    width: 80%;
+    width: 100%;
     margin: 0;
   }
   button {
     width: 80px;
     font-size: 0.8rem;
+    justify-content: center;
+    display: flex;
   }
   h1 {
     font-size: 1.5rem;
