@@ -99,14 +99,14 @@ dialog.form-container iframe {
   p,
   .date p {
     font-size: 0.8rem;
-    margin: 5px;
+
     line-height: 1.2;
   }
   .date p {
     font-size: 1.2rem;
   }
   .text-container {
-    gap: 5px;
+    gap: 0;
     width: 100%;
     margin: 0;
   }
