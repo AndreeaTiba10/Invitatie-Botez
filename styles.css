@@ -106,9 +106,9 @@ dialog.form-container iframe {
     font-size: 1.2rem;
   }
   .text-container {
-    gap: 0;
     width: 100%;
     margin: 0;
+    gap: 5px;
   }
   button {
     width: 80px;
