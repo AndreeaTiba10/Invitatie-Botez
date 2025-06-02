@@ -3,81 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luxurious+Script&family=MonteCarlo&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Invitatie Botez</title>
   </head>
   <body>
+    <div class="frame"></div>
+    <div class="frame2"></div>
+    <img class="bear-img" src="./img/bear_no_bg_final.png" alt="bear" />
+    <img
+      class="carriage-img"
+      src="./img/carriage_transparent.png"
+      alt="carriage"
+    />
+
+    <img class="clouds-img" src="./img/clouds_left.png" alt="clouds" />
+    <img class="clouds-img2" src="./img/clouds_right.png" alt="clouds" />
+    <img class="clouds-img3" src="./img/clouds_left.png" alt="clouds" />
+    <img class="clouds-img4" src="./img/clouds_right.png" alt="clouds" />
+    <img class="clouds-mobile" src="./img/clouds_mobil.png" alt="clouds" />
+    <img class="clouds-mobile2" src="./img/clouds_mobil.png" alt="clouds" />
+
     <div class="invitation">
       <div class="text-container">
-        <p>
-          Sunt o prințesă frumoasă, <br />
-          Iubită de toți din casă. <br />
-          Și v-aștept cu nerăbdare, <br />
-          La o mare sărbătoare. <br />
+        <!-- <div class="frame"></div> -->
+        <p class="intro-text">
+          Sunt o prințesă frumoasă, Iubită de toți din casă. Și v-aștept cu
+          nerăbdare, La o mare sărbătoare. <br />
           Mă numesc
         </p>
-        <h1>Aida Maria</h1>
+        <h1 class="child-name">Aida Maria</h1>
 
-        <div style="display: flex; gap: 25px">
-          <p>
-            Împreună cu părinții, <br />
+        <div class="family-container" style="display: flex; gap: 25px">
+          <p class="parents">
+            Împreună cu PĂRINȚII, <br />
             <strong>Alin</strong> &amp; <strong>Mădălina</strong>
           </p>
 
-          <p>
-            Alături de nașii, <br />
+          <p class="godparents">
+            Alături de NAȘII, <br />
             <strong>Daniela</strong> &amp; <strong>Simina</strong>
           </p>
         </div>
 
-        <p>
-          Avem plăcerea de a vă invita să sărbătorim împreună într-un colț
-          frumos de natură la
-          <span class="highlight"
-            ><a
+        <p class="invitation-text">
+          Avem plăcerea de a vă invita să sărbătorim împreună botezul meu,
+          într-un colț frumos de natură la
+          <span class="highlight">
+            <a
               class="location-link"
               href="https://maps.app.goo.gl/zmXMggNmJVJXgvfv5"
             >
-              <strong>Bahna Garden Events Iasi</strong></a
-            ></span
-          >, Ciurea 248C. <br />
+              <br />
+              <strong>Bahna Garden Events Iasi, </strong>
+            </a> </span
+          ><br />
         </p>
-        <div class="date">
-          <p>
-            <strong>14</strong> | <strong>septembrie</strong> |
-            <strong>2025</strong>
-          </p>
-        </div>
-        <p>
+
+        <p class="date">
+          DUMINICĂ | <span style="font-size: 4rem; color: #e7a8a8">14</span> |
+          SEPTEMBRIE
+        </p>
+
+        <p class="dress-code">
           👗 Ținută recomandată:
           <strong>boho chic, white party</strong> (potrivită pentru petrecere în
           grădină)
         </p>
-        <p>
+        <p class="confirmation-request">
           🙏 Te rugăm să ne confirmi participarea<br />
-          până la <strong>1 septembrie</strong>
+          până la <strong>1 septembrie 2025</strong>
           , ca să știm câte farfurii să pregătim 😄
         </p>
-        <button id="submit-btn">Confirma</button>
-      </div>
-      <dialog class="form-container">
-        <button
-          id="close-btn"
-          style="
-            float: right;
-            width: 20px;
-            display: flex;
-            justify-content: center;
-          "
-        >
-          ✕
+        <button type="button" id="submit-btn" class="confirm-btn">
+          Confirmă
         </button>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScw-GHCF_sFpmyWkWHpY93ycBpzKlcf-vAoyAUAJx0uJEgVxw/viewform?embedded=true"
-          >Se încarcă…</iframe
-        >
-      </dialog>
+      </div>
     </div>
-    <script src="./script.js"></script>
+
+    <div class="modal form-container">
+      <button
+        type="button"
+        id="close-btn"
+        style="
+          float: right;
+          width: 20px;
+          display: flex;
+          justify-content: center;
+        "
+      >
+        ✕
+      </button>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScw-GHCF_sFpmyWkWHpY93ycBpzKlcf-vAoyAUAJx0uJEgVxw/viewform?embedded=true"
+        width="500"
+        height="700"
+      >
+        Se încarcă…
+      </iframe>
+    </div>
+    <div class="frame-top"></div>
+    <div class="frame-bottom"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const submitBtn = document.getElementById("submit-btn");
+        const modal = document.querySelector(".modal");
+        const closeBtn = document.getElementById("close-btn");
+
+        console.log("submitBtn:", submitBtn);
+        console.log("modal:", modal);
+        console.log("closeBtn:", closeBtn);
+
+        submitBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Am apăsat pe Confirmă!");
+          modal.style.display = "block";
+        });
+
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>
