@@ -113,6 +113,10 @@ p {
   font-weight: 500;
   font-style: normal;
 }
+.family-container {
+  display: flex;
+  gap: 25px;
+}
 .family-container strong {
   font-family: "STIX Two Text", serif;
   color: #dcbc6b;
@@ -141,6 +145,10 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.day {
+  font-size: 4rem;
+  color: #e7a8a8;
 }
 .invitation-text button {
   background-color: white;
@@ -262,39 +270,50 @@ p {
     margin-top: 25px;
   }
   .text-container {
-    max-width: 350px;
     text-align: center;
+    padding: 1rem;
   }
   .intro-text {
-    font-size: 1.49rem;
+    font-size: 1.2rem;
   }
   .child-name {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .family-container {
-    gap: 18px;
     flex-direction: column;
+    gap: 15px;
   }
   .family-container p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .family-container strong {
     font-size: 1.1rem;
   }
   .invitation-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .location-link {
     font-size: 1rem;
   }
   .date {
+    font-size: 0.8rem;
+    color: #a16464;
+    gap: 7px;
+  }
+  .day {
+    font-size: 2rem;
+  }
+  .dress-code,
+  .confirmation-request {
+    font-family: "STIX Two Text", serif;
     font-size: 1rem;
   }
-  button {
-    width: 80px;
-    font-size: 0.8rem;
+  .confirm-btn {
+    width: 100px;
+    font-size: 1rem;
     justify-content: center;
     display: flex;
+    font-family: italic;
   }
 
   .form-container {
