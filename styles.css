@@ -265,6 +265,10 @@ p {
   .frame2 {
     padding: 2rem;
     border: 4px ridge rgb(203, 179, 69);
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
   }
   .invitation {
     margin-top: 25px;
