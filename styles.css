@@ -204,6 +204,7 @@ p {
   height: 90vh;
   background: radial-gradient(circle, #fff 20%, #fbf5f5 80%);
   border: none;
+  border-radius: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   z-index: 9999;
@@ -304,7 +305,8 @@ p {
   }
   .text-container {
     text-align: center;
-    padding: 4rem 0.5rem;
+    padding: 4rem 1rem;
+    width: 100%;
   }
   .intro-text {
     font-size: 1.4rem;
@@ -352,6 +354,7 @@ p {
   .modal {
     width: 100%;
     height: 90vh;
+    padding: 0;
   }
   .modal iframe {
     width: 100%;
