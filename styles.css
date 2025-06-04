@@ -5,9 +5,7 @@
 }
 
 body {
-  height: 100vh;
   width: 100%;
-  /* background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
   background: radial-gradient(circle, #fff 20%, #fbf5f5 80%);
   background-attachment: fixed;
   font-size: 1.4rem;
@@ -19,7 +17,7 @@ body {
   z-index: 0;
   position: fixed;
   width: 100%;
-  height: 40px;
+  height: 30px;
 }
 .frame-top {
   top: 0;
@@ -50,6 +48,21 @@ body {
   left: 40px;
   right: 40px;
   bottom: 40px;
+}
+.blur-top,
+.blur-bottom {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+}
+.blur-bottom {
+  bottom: 47px;
+  background: linear-gradient(to top, white, transparent);
+}
+.blur-top {
+  top: 47px;
+  background: linear-gradient(to top, transparent, white);
 }
 img {
   position: fixed;
@@ -91,9 +104,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 720px;
+  width: 60%;
   gap: 15px;
-  padding: 3rem;
+  padding: 6rem 3rem;
 }
 p {
   text-align: center;
@@ -213,16 +226,13 @@ p {
 @media screen and (max-width: 767px) {
   .frame-top,
   .frame-bottom {
-    height: 30px;
+    height: 35px;
   }
   .blur-top,
   .blur-bottom {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    height: 100px;
-    left: 60px;
+    width: 100%;
+    height: 60px;
     z-index: 1;
   }
   .blur-bottom {
@@ -234,13 +244,13 @@ p {
     background: linear-gradient(to top, transparent, white);
   }
   .bear-img {
-    width: 140px;
-    bottom: -20px;
-    left: 0;
+    width: 120px;
+    bottom: -15px;
+    left: 9px;
   }
   .carriage-img {
-    width: 160px;
-    bottom: 0;
+    width: 145px;
+    bottom: -4px;
     right: 0;
   }
   .clouds-img,
@@ -257,35 +267,44 @@ p {
   }
 
   .clouds-mobile-bottom {
-    bottom: 10px;
+    bottom: 5px;
     width: 500px;
     z-index: 3;
+    display: block;
   }
-  .frame,
+
+  .frame {
+    padding: 1.3rem;
+    border: 3px ridge rgb(203, 179, 69);
+    top: 0;
+    bottom: 0;
+    left: 25px;
+    right: 25px;
+  }
   .frame2 {
-    padding: 2rem;
-    border: 4px ridge rgb(203, 179, 69);
-    top: 15px;
-    bottom: 15px;
+    border: 3px ridge rgb(203, 179, 69);
+    top: 0;
+    bottom: 0;
     left: 15px;
     right: 15px;
   }
   .invitation {
     margin-top: 25px;
+    padding: 1.4rem;
   }
   .text-container {
     text-align: center;
-    padding: 1rem;
+    padding: 4rem 0.5rem;
   }
   .intro-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .child-name {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .family-container {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
   .family-container p {
     font-size: 0.8rem;
@@ -300,12 +319,12 @@ p {
     font-size: 1rem;
   }
   .date {
-    font-size: 0.8rem;
-    color: #a16464;
+    font-size: 1rem;
+    color: #bd7c7c;
     gap: 7px;
   }
   .day {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .dress-code,
   .confirmation-request {
