@@ -296,7 +296,9 @@ p {
   margin-top: 15px;
 }
 .clouds-mobile-top,
-.clouds-mobile-bottom {
+.clouds-mobile-bottom,
+.clouds-mobile-bottom2,
+.clouds-mobile-top2 {
   display: none;
 }
 @keyframes pulse {
@@ -372,7 +374,20 @@ p {
     z-index: 9;
     display: block;
   }
-
+  .clouds-mobile-bottom2,
+  .clouds-mobile-top2 {
+    width: 500px;
+    z-index: 9;
+    display: block;
+  }
+  .clouds-mobile-bottom2 {
+    bottom: -19px;
+    left: -48px;
+  }
+  .clouds-mobile-top2 {
+    top: -19px;
+    right: -48px;
+  }
   .frame {
     padding: 1.3rem;
     border: 3px ridge rgb(203, 179, 69);
