@@ -201,10 +201,11 @@ p {
   z-index: 9999;
   display: none; /* ascuns inițial */
 }
-.clouds-mobile,
-.clouds-mobile2 {
+.clouds-mobile-top,
+.clouds-mobile-bottom {
   display: none;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   /* .invitation {
   } */
@@ -248,11 +249,10 @@ p {
   .clouds-img4 {
     display: none;
   }
-  .clouds-mobile {
+  .clouds-mobile-top {
     width: 500px;
     z-index: 3;
     top: 0;
-
     display: block;
   }
 
