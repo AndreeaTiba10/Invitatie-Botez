@@ -6,8 +6,6 @@
 
 body {
   width: 100%;
-  background: radial-gradient(circle, #fff 20%, #fbf5f5 80%);
-
   font-size: 1.4rem;
   color: #555;
 }
